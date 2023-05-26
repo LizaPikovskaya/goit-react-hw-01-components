@@ -10,7 +10,7 @@ import PropTypes from 'prop-types';
 
 export const Statistics = ({ stats, title }) => (
   <Section>
-    {title === undefined ? <></> : <Title>{title}</Title>}
+    {title && <Title>{title}</Title>}
     <List>
       {stats.map(({ id, label, percentage }) => (
         <Item key={id}>
