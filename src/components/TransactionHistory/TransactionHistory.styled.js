@@ -1,11 +1,12 @@
-import styled from "styled-components";
-
+import styled from 'styled-components';
 
 export const Table = styled.table`
   margin: 100px auto;
   table-layout: fixed;
   border-collapse: collapse;
-  border: 2px solid black;
+  overflow: hidden;
+  border-radius: 15px;
+
   th {
     padding: 15px 0px;
     width: 300px;
@@ -27,4 +28,3 @@ export const Table = styled.table`
     background-color: white;
   }
 `;
-
